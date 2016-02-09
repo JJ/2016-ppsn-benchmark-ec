@@ -1,4 +1,4 @@
-\documentclass[conference,twocolumns]{IEEEtran}
+\documentclass{llncs}
 
 \usepackage{cite}
 \usepackage{array}
@@ -24,32 +24,32 @@ measures.xo <- read.csv('measures-xover.csv')
 measures.mo <- read.csv('measures-maxones.csv',header=TRUE,sep=",",dec=".")
 @
 
-
-\title{A comparison of implementations of basic evolutionary
- algorithm  operations in different languages} 
+\title{An examination of the speed of evolutionary algorithms in
+  different programming languages} 
 
 %PABLO: in conference mode this is how to create the authors
-\author{\IEEEauthorblockN{Juan-Julián Merelo-Guervós,Israel
-    Blancas-Álvarez, Pedro A. Castillo, Gustavo Romero }
-\IEEEauthorblockA{CITIC and Computer Architecture and Technology
+\author{Juan-Julián Merelo-Guervós, Israel Blancas-Álvarez, Pedro
+ A. Castillo, Gustavo Romero, Antonio Fernández-Ares \inst{1}
+\and Victor M. Rivas
+\and Mario García-Valdez, Amaury Hernández-Águila
+\and Mario Román }
+
+\institute{CITIC and Computer Architecture and Technology
   Department\\
 University of Granada (Spain)\\
-Email: (jmerelo,iblancasa,pacv,gustavo)@ugr.es}
+Email: (jmerelo,iblancasa,pacv,gustavo)@ugr.es 
 \and
-\IEEEauthorblockN{Victor M. Rivas}
-\IEEEauthorblockA{Department of Computer Sciences\\
+Department of Computer Sciences\\
 University of Jaén (Spain)\\
-Email: vrivas@ujaen.es}
+Email: vrivas@ujaen.es
+\and 
+Tijuana Institute of Technology (Mexico)\\
+Email: {amherag,mario}@tectijuana.edu.mx
 \and
-\IEEEauthorblockN{Mario García-Valdez, Amaury Hernández-Águila}
-\IEEEauthorblockA{Tijuana Institute of Technology (Mexico)\\
-Email: {amherag,mario}@tectijuana.edu.mx}
-\and
-\IEEEauthorblockN{Mario Román}
-\IEEEauthorblockA{University of Granada (Spain)\\
+University of Granada (Spain)\\
 Email: mromang08@correo.ugr.es}
 
-}
+
 
 \maketitle
 
@@ -78,10 +78,10 @@ are, in fact, the best for choosing an implementation language based
 on its performance.
 \end{abstract}
 
-\begin{IEEEkeywords}
+\begin{keywords}
 Per\-formance optimization, bench\-mark, implementation of
 evolutionary algorithms, onemax, programming languages.
-\end{IEEEkeywords}
+\end{keywords}
 
 \section{Introduction}
 
@@ -803,9 +803,8 @@ PROY-PP2015-06 (Plan Propio 2015 UGR),
 and project V17-2015 of the Microprojects program 2015 from CEI BioTIC Granada.  
 
 
-\bibliographystyle{IEEEtran}
+\bibliographystyle{splncs03}
 \bibliography{geneura,languages,GA-general}
-%\bibliography{languages}
 \end{document}
 
 
