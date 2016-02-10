@@ -146,3 +146,6 @@ c++/demo-c++
 #clojure
 clojure/lib
 .lein-deps-sum
+
+*.pdf
+geneura.bib
