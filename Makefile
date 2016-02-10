@@ -9,7 +9,7 @@ auto:
 	latexmk -bibtex -f -pdf -pvc
 
 clean:
-	latexmk -C
+	latexmk -C .
 	for i in $(SUB); do $(MAKE) -C $$i clean; done
 
 install:
@@ -17,6 +17,7 @@ install:
 	R -e 'install.packages("knitr", dependencies = TRUE, repos="http://cran.rstudio.com/")'
 	R -e 'install.packages("ggplot2", dependencies = TRUE, repos="http://cran.rstudio.com/")'
 	wget https://raw.githubusercontent.com/geneura/biblio/master/geneura.bib
+	wget https://raw.githubusercontent.com/geneura/biblio/master/GA-general.bib
 
 %.tex: %.Rnw
 	R -e 'library(knitr);knit("$<")'
